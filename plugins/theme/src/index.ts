@@ -1,14 +1,16 @@
-import { findByProps } from "@vendetta/metro";
+import { logger } from "@vendetta";
+import { find } from "@vendetta/metro";
 import { instead } from "@vendetta/patcher";
 
-const { canUseClientThemes } = findByProps("canUseClientThemes");
+const canUseClientThemes = find(m => m.default.canUseClientThemes);
 
 const patches = [];
 
 export default {
     onLoad: () => {
+        logger.log(canUseClientThemes)
         patches.push(
-            instead("canUseClientThemes", canUseClientThemes.default, () => true)
+            instead("canUseClientThemes", canUseClientThemes, () => true)
         );
     },
     onUnload: () => {
