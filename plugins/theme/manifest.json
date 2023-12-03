@@ -1,0 +1,14 @@
+{
+    "name": "ClientTheme",
+    "description": "A plugin for use as a template.",
+    "authors": [
+        {
+            "name": "kome1",
+            "id": "783305816702844990"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
