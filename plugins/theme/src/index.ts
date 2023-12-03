@@ -8,7 +8,7 @@ const patches = [];
 export default {
     onLoad: () => {
         patches.push(
-            instead("canUseClientThemes", canUseClientThemes, () => true)
+            instead("canUseClientThemes", canUseClientThemes.default, () => true)
         );
     },
     onUnload: () => {
