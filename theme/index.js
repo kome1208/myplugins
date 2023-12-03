@@ -1,0 +1,1 @@
+(function(e,t,c){"use strict";const{canUseClientThemes:u}=t.findByProps("canUseClientThemes"),n=[];var a={onLoad:function(){n.push(c.instead("canUseClientThemes",u,function(){return!0}))},onUnload:function(){n.forEach(function(i){return i.unpatch()})}};return e.default=a,Object.defineProperty(e,"__esModule",{value:!0}),e})({},vendetta.metro,vendetta.patcher);
