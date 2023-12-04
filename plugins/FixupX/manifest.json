@@ -1,0 +1,14 @@
+{
+    "name": "FixupX",
+    "description": "fix twitter embed",
+    "authors": [
+        {
+            "name": "kome1",
+            "id": "783305816702844990"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
