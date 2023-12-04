@@ -9,6 +9,7 @@ const Messages = findByProps("sendMessage", "receiveMessage");
 
 export default {
     onLoad: () => {
+        storage.useFx ??= false;
         patches.push(
             before("sendMessage", Messages, (args) => {
                 const content = args[1].content;

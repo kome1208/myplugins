@@ -13,7 +13,7 @@ export default () => {
             <View>
                 <FormSwitchRow
                     label="Use fxtwitter"
-                    value={storage.useFx || false}
+                    value={storage.useFx ?? false}
                     onChangeValue={value => storage.useFx = value}
                 />
             </View>
