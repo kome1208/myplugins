@@ -14,7 +14,7 @@ export default () => {
                 <FormSwitchRow
                     label="Use fxtwitter"
                     value={storage.useFx ?? false}
-                    onChangeValue={value => storage.useFx = value}
+                    onValueChange={value => storage.useFx = value}
                 />
             </View>
         </ScrollView>
